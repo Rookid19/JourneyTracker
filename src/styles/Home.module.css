@@ -1,0 +1,9 @@
+.main {
+  display: flex;
+  align-self: center;
+  height: 100%;
+  margin: auto;
+  width: 300px;
+  overflow: hidden;
+  padding-inline: 30px;
+}
