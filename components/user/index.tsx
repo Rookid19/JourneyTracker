@@ -3,19 +3,16 @@ import CustomInput from "../ui_components/customInput";
 import styles from "./page.module.css";
 import CustomButton from "../ui_components/customButton";
 
-function User() {
-  const inputEl = useRef<HTMLInputElement>(null);
-
-  useEffect(() => {
-    // Check if the inputEl and its current property are not null before calling focus()
-    if (inputEl && inputEl.current) {
-      inputEl.current.focus();
-    }
-  }, [inputEl]);
-
+function User({
+  pageIndex,
+  setPageIndex,
+}: {
+  pageIndex: number;
+  setPageIndex: any;
+}) {
   return (
     <div>
-      <span className={styles.step}>Step 1 of 2</span>
+      <span className={styles.step}>Step {pageIndex} of 2</span>
       <div className={styles.title}>
         Let{"'"}s start with your personal information
       </div>
@@ -50,7 +47,7 @@ function User() {
         By continuing, I understand and agree to Journey Tracker’s{" "}
         <u>Privacy Policy</u> and <u>Terms of Use</u> for creating an Account
       </div>
-      <CustomButton name={"Continue"} />
+      <CustomButton name={"Continue"} onClick={() => setPageIndex(2)} />
     </div>
   );
 }
