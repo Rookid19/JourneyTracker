@@ -1,6 +1,7 @@
 import React from "react";
 import CustomInput from "../ui_components/customInput";
 import styles from "./page.module.css";
+import CustomButton from "../ui_components/customButton";
 
 function User() {
   return (
@@ -18,6 +19,11 @@ function User() {
           name="phone"
           placeholder="Phone number"
         />
+        <CustomInput
+          // inputType="phone"
+          name="phone"
+          placeholder="Phone number"
+        />
       </div>
 
       <div className={styles.terms}>
@@ -25,7 +31,7 @@ function User() {
         <u>Privacy Policy</u> and <u>Terms of Use</u> for creating a Credet
         Account
       </div>
-      {/* <CustomButton onClick={nav} disabled={valid} /> */}
+      <CustomButton name={"Continue"} />
     </div>
   );
 }

@@ -22,9 +22,12 @@ function CustomInput({
         className="custom-input"
         placeholder={placeholder}
         style={{
-          backgroundColor: inputType === "phone" && "white",
-          paddingInline: inputType === "phone" ? 5 : 15,
-          fontSize: inputType === "phone" ? 28 : 15,
+          //   backgroundColor: inputType === "phone" && "white",
+          //   paddingInline: inputType === "phone" ? 5 : 15,
+          //   fontSize: inputType === "phone" ? 28 : 15,
+          backgroundColor: "white",
+          paddingInline: 5,
+          fontSize: 28,
         }}
       />
     </div>
