@@ -14,12 +14,12 @@ function CustomInput({
         style={{ display: "flex", alignItems: "center" }}
         className={styles.labelContainer}
       >
-        <div className="label">{label}</div>
+        <div className={styles.label}>{label}</div>
       </div>
 
       <input
         {...props}
-        className="custom-input"
+        className={styles.custom_input}
         placeholder={placeholder}
         style={{
           //   backgroundColor: inputType === "phone" && "white",

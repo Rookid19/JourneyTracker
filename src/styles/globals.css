@@ -12,3 +12,10 @@ body {
   height: 100vh;
   overflow: scroll; */
 }
+
+/* changing all placeholder color */
+::-webkit-input-placeholder {
+  color: var(--journey-grey);
+  font-size: 13px;
+  align-self: center;
+}

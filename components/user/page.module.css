@@ -1,29 +1,29 @@
 .step {
-    color: var(--journey-grey);
-    font-size: 15px;
-  }
+  color: var(--journey-grey);
+  font-size: 15px;
+}
 
-  .title {
-    font-size: 28px;
-    /* font-family: "polysans-medium"; */
-    margin-block: 15px;
-    width: 300px;
-  }
+.title {
+  font-size: 28px;
+  /* font-family: "polysans-medium"; */
+  margin-block: 15px;
+  width: 300px;
+}
 
-  .label {
-    font-size: 16px;
-    color: var(--journey-grey);
-    margin-bottom: 10px;
-    margin-top: 20px;
-  }
+.label {
+  font-size: 16px;
+  color: var(--journey-grey);
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
 
-  .terms {
-    font-size: 13px;
-    color: var(--journey-grey);
-    line-height: 20px;
-    margin-bottom: 10px;
-    margin-top: 250px;
-  }
-  .terms > u {
-    color: var(--journey-black);
-  }
+.terms {
+  font-size: 13px;
+  color: var(--journey-grey);
+  line-height: 20px;
+  margin-bottom: 10px;
+  margin-top: 100px;
+}
+.terms > u {
+  color: var(--journey-black);
+}

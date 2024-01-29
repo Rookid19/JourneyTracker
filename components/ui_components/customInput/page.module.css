@@ -1,0 +1,25 @@
+.custom_input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 43px;
+  background-color: var(--journey-light-grey);
+  border: none;
+  border-radius: 5px;
+  padding-left: 20px;
+  border-right: 15px solid transparent;
+  border: 2px solid var(--journey-green);
+}
+
+.label {
+  font-family: "polysans-regular";
+  font-size: 16px;
+  color: var(--journey-grey);
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.custom_input:focus {
+  outline: none !important;
+  /* border: 2px solid var(--journey-green); */
+  border-right: 15px solid var(--journey-green);
+}
