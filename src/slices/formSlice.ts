@@ -5,8 +5,8 @@ export const formSlice = createSlice({
     name: 'form',
     initialState: {
         personalInfo: {
-            firstName: 'Randy',
-            lastName: 'Odoom',
+            firstName: '',
+            lastName: '',
             dob: '',
         },
         cities: [{ dateArrived: '', cityName: '' }],

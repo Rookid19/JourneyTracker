@@ -27,3 +27,10 @@
 .terms > u {
   color: var(--journey-black);
 }
+
+.error {
+  /* color: var(--journey-red)!important; */
+  color: red !important;
+  font-size: 13px;
+  margin-top: 5px;
+}
