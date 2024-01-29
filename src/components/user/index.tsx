@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from "react";
 import CustomInput from "../ui_components/customInput";
 import styles from "./page.module.css";
 import CustomButton from "../ui_components/customButton";
+import { useDispatch, useSelector } from "react-redux";
+import { formData } from "@/slices/formSlice";
 
 function User({
   pageIndex,
@@ -10,11 +12,14 @@ function User({
   pageIndex: number;
   setPageIndex: any;
 }) {
+  const dispatch = useDispatch();
+  const form = useSelector(formData)
   return (
     <div>
       <span className={styles.step}>Step {pageIndex} of 2</span>
       <div className={styles.title}>
-        Let{"'"}s start with your personal information
+        Let{"'"}s start with your personal information 
+    
       </div>
       <div className={styles.label}>Enter your name and date of birth</div>
 

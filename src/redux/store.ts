@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit'
-import notesReducer from '../slices/notesSlice'
+import formReducer from '../slices/formSlice'
 
 export const store = configureStore({
     reducer: {
-        notes: notesReducer,
+        form: formReducer,
     },
     // middleware: (getDefaultMiddleware) => [...getDefaultMiddleware({ serializableCheck: false })], // Exclude serializableCheck middleware
 })
