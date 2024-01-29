@@ -1,0 +1,21 @@
+.step {
+  color: var(--journey-grey);
+  font-size: 15px;
+}
+
+.title {
+  font-size: 28px;
+  /* font-family: "polysans-medium"; */
+  margin-block: 15px;
+  width: 300px;
+}
+
+.label {
+  font-size: 16px;
+  color: var(--journey-grey);
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+#button {
+  margin-top: 30px;
+}

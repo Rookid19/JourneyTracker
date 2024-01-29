@@ -4,6 +4,7 @@ import User from "../../components/user";
 import Image from "next/image";
 import logo from "../../public/assets/images/logo.png";
 import { useState } from "react";
+import City from "../../components/city";
 export default function Home() {
   const [pageIndex, setPageIndex] = useState<number>(1);
 
@@ -20,10 +21,7 @@ export default function Home() {
         {pageIndex === 1 ? (
           <User pageIndex={pageIndex} setPageIndex={setPageIndex} />
         ) : (
-          <div>
-            <div onClick={() => setPageIndex(1)}>back</div>
-            Hell
-          </div>
+          <City pageIndex={pageIndex} setPageIndex={setPageIndex} />
         )}
       </main>
     </>

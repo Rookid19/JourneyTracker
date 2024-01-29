@@ -16,9 +16,7 @@ function User({
       <div className={styles.title}>
         Let{"'"}s start with your personal information
       </div>
-      <div className={styles.label}>
-        Select your country and enter your phone number
-      </div>
+      <div className={styles.label}>Enter your name and date of birth</div>
 
       <div>
         <CustomInput
