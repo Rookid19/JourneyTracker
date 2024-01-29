@@ -1,10 +1,10 @@
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
-import User from "../../components/user";
+import User from "../components/user";
 import Image from "next/image";
 import logo from "../../public/assets/images/logo.png";
 import { useState } from "react";
-import City from "../../components/city";
+import City from "../components/city";
 export default function Home() {
   const [pageIndex, setPageIndex] = useState<number>(1);
 
