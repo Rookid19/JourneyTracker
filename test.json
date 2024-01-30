@@ -1,0 +1,17 @@
+{
+  "personalInfo": {
+    "firstName": "Randy",
+    "lastName": "Odoom",
+    "dob": "2024-01-25"
+  },
+  "cities": [
+    {
+      "dateArrived": "2024-01-11",
+      "cityName": "Accra"
+    },
+    {
+      "dateArrived": "2024-01-02",
+      "cityName": "Kumasi"
+    }
+  ]
+}

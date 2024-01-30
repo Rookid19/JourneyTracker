@@ -19,3 +19,25 @@
 #button {
   margin-top: 30px;
 }
+
+/* Form.css */
+.addmore {
+  background-color: #007bff; /* Blue background color */
+  color: white; /* White text color */
+  border: none; /* Remove button border */
+  padding: 10px 20px; /* Add padding */
+  cursor: pointer; /* Add cursor pointer */
+  border-radius: 5px; /* Add border radius */
+  margin-right: 10px; /* Add margin to separate from other buttons */
+}
+
+.addmore:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.back {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}

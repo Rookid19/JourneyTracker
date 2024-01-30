@@ -15,14 +15,14 @@ export default function useValidate(values: {
   if (!values.firstName.trim()) {
     errors.firstName = "First name is required";
   } else if (values.firstName.length < 2) {
-    errors.firstNameLength = "First name must be 2 characters long";
+    errors.firstName = "First name must be 2 characters long";
   }
 
   //last name validation
   if (!values.lastName.trim()) {
     errors.lastName = "Last name is required";
   } else if (values.lastName.length < 2) {
-    errors.lastNameLength = "Last name must be 2 characters long";
+    errors.lastName = "Last name must be 2 characters long";
   }
 
   // dob validation

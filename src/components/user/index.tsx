@@ -20,7 +20,6 @@ function User({
     target: { name: any; value: any };
   }) => {
     const { name, value } = e.target;
-    // setUserInfo({ ...userInfo, [name]: value });
     dispatch(updatePersonalInfo({ ...form.personalInfo, [name]: value }));
   };
 
@@ -34,7 +33,7 @@ function User({
 
   return (
     <div>
-      {JSON.stringify(form.personalInfo)}
+      {/* {JSON.stringify(form.personalInfo)} */}
       {/* {JSON.stringify(validateErrors)} */}
       <br />
       <span className={styles.step}>Step {pageIndex} of 2</span>
@@ -73,16 +72,22 @@ function User({
           onChange={handlePersonalInfoChange}
           max={new Date().toISOString().split("T")[0]} // Set maximum date as today
         />
-        {errors.dob && (
-          <div className={styles.error}>{errors.dob}</div>
-        )}
+        {errors.dob && <div className={styles.error}>{errors.dob}</div>}
       </div>
 
       <div className={styles.terms}>
         By continuing, I understand and agree to Journey Tracker’s{" "}
         <u>Privacy Policy</u> and <u>Terms of Use</u> for creating an Account
       </div>
-      <CustomButton name={"Continue"} onClick={() => setPageIndex(2)} />
+      <CustomButton
+        name={"Continue"}
+        onClick={() => setPageIndex(2)}
+        style={{
+          backgroundColor:
+            Object.values(errors).length > 0 ? "#e0e0e0" : "",
+        }}
+        disabled={Object.values(errors).length > 0} // Disable button if there are errors
+      />
     </div>
   );
 }
